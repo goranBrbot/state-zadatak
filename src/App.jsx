@@ -28,7 +28,7 @@ function App() {
       <UserClass name={users[0].name} years={users[0].years} />
       <UserFunction name={users[1].name} years={users[1].years} />
       <UserChildren name={users[2].name} years={users[2].years}>
-        {tekst}
+        <p>{tekst}</p>
       </UserChildren>
       <button onClick={uvecajGodine}>Uvecaj godine</button>
     </>
