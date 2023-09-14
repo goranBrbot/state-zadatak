@@ -2,12 +2,6 @@ import './App.css'
 import { Component } from 'react'
 import { UserClass, UserFunction, UserChildren } from './user'
 
-const users = [
-  { name: 'Ivan', years: 30, },
-  { name: 'Marko', years: 35 },
-  { name: 'Ana', years: 25 },
-];
-
 class App extends Component {
   constructor(props) {
     super(props)
@@ -23,7 +17,7 @@ class App extends Component {
   }
 
   uvecajGodine = () => {
-    const newUsers = users.map(user => {
+    const newUsers = this.state.users.map(user => {
       return {...user, years: user.years + 1 }
     })
     this.setState({users: newUsers})
