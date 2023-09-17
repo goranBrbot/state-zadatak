@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function UserChildren({name, years, children}) {
     return (
       <>
@@ -5,4 +7,10 @@ export default function UserChildren({name, years, children}) {
           {children}
       </>
     )
+  }
+
+  UserChildren.propTypes = {
+    name: PropTypes.string.isRequired,
+    years: PropTypes.number.isRequired,
+    children: PropTypes.element
   }
