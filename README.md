@@ -17,3 +17,8 @@ Komponenta App i još jedna komponenta moraju biti definirane klasom, a dvije ko
 5. Pritiskom na button potrebno je promijeniti godine korisnika
 6. Prikazati promjenu na ekranu
 7. Komponenta App smije biti jedina komponenta sa stanjima (statefull), komponenta App mora biti definirana klasom
+
+## Treći zadatak
+
+1. Potrebno je promijeniti komponentu App - komponenta App mora biti definirana funkcijom.
+2. Za čuvanje stanja aplikacije potrebno je koristiti useState hook.

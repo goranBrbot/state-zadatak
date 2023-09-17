@@ -1,5 +1,5 @@
 import "./App.css";
-import { Component, useState } from "react";
+import { useState } from "react";
 import { UserClass, UserFunction, UserChildren } from "./user";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
   const [users, setUsers] = useState(initialUsers);
 
-  const tekst = "Proizvoljan tekst";
+  const tekst = "Godine prolaze ..";
 
   const uvecajGodine = () => {
     setUsers((prevState) => {
@@ -21,7 +21,6 @@ function App() {
       return updatedUsers;
     });
   };
-
   return (
     <>
       <h1>State</h1>
